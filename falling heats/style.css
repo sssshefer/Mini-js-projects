@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+li {
+    list-style: none;
+}
+
+button:active, button:focus {
+    outline: none;
+}
+
+button, a {
+    transition: 0.3s ease;
+}
+
+/* START */
+
+.button {
+    width: 150px;
+    height: 80px;
+    background-color: rebeccapurple;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+.button:hover {
+    -webkit-box-shadow: 0 0 18px 5px rgba(102, 51, 153, 0.76);
+    -moz-box-shadow: 0 0 18px 5px rgba(102, 51, 153, 0.76);
+    box-shadow: 0 0 18px 5px rgba(102, 51, 153, 0.76);
+}
+
+.heart {
+    position: fixed;
+    top: -1vh;
+    transform: translateY(0);
+    animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}

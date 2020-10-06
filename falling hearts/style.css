@@ -9,6 +9,7 @@ body {
     justify-content: center;
     margin: 0;
     min-height: 100vh;
+    background-color: #1d1d1d;
 }
 
 li {
@@ -30,14 +31,16 @@ button, a {
     height: 80px;
     background-color: rebeccapurple;
     color: #fff;
-    border-radius: 5px;
+    border-radius: 8px;
     border: none;
+    font-size: 1.3em;
+    font-family: "Roboto", Arial,sans-serif;
 }
 
-.button:hover {
-    -webkit-box-shadow: 0 0 18px 5px rgba(102, 51, 153, 0.76);
-    -moz-box-shadow: 0 0 18px 5px rgba(102, 51, 153, 0.76);
-    box-shadow: 0 0 18px 5px rgba(102, 51, 153, 0.76);
+ .active {
+    -webkit-box-shadow: 0 0 40px 7px rgba(102, 51, 153, 0.76);
+    -moz-box-shadow: 0 0 40px 7px rgba(102, 51, 153, 0.76);
+    box-shadow: 0 0 40px 7px rgba(102, 51, 153, 0.76);
 }
 
 .heart {

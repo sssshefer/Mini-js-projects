@@ -18,9 +18,11 @@ button.addEventListener('click', () => {
     turn = !turn;
     if (turn) {
         console.log(turn);
+        button.classList.add('active');
         interval = setInterval(createHeart, 100);
     } else {
         console.log(turn);
+        button.classList.remove('active');
         clearInterval(interval);
     }
 });

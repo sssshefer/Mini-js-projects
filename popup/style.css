@@ -69,7 +69,21 @@ button, a {
     background-color: transparent;
     border:none;
     font-size: 1.3rem;
+    color:#fff;
 }
 .close-button:active{
-   color:#fff;
+    color:#000;
+}
+
+@media (max-width: 768px) {
+    .popup {
+        width:250px;
+        padding:1rem;
+        font-size:1rem;
+    }
+    .close-button{
+        font-size:.8rem;
+        top:4px;
+        right:4px;
+    }
 }
